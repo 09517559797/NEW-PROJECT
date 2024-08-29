@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="dhelCss.css">
+    <title>Large Modal with Left and Right Panels</title>
+</head>
+<body>
+
+    <table>
+
+        <tr>
+            <th>Region</th>
+            <th>Province</th>
+            <th>Municipality</th>
+            <th>No. of Barangays</th>
+            <th>Progress</th>
+            <th>-</th>
+        </tr>
+        <tr>
+            <td>I</td>
+            <td>Ilocos Sur</td>
+            <td>Sigay</td>
+            <td>7</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+            </td>
+            <td>
+                <button class="open-modal-btn view-btn" id="btn1">View</button>
+                <button class="open-modal-btn edit-btn">Edit</button>
+                <button class="open-modal-btn alert-btn">Alert</button>
+            </td>
+        </tr>
+        <tr>
+            <td>II</td>
+            <td>Batanes</td>
+            <td>Itbayat</td>
+            <td>6</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 43%;"></div>
+                </div>
+            </td>
+            <td>
+                <button class="open-modal-btn view-btn" id="btn1">View</button>
+                <button class="open-modal-btn edit-btn">Edit</button>
+                <button class="open-modal-btn alert-btn">Alert</button>
+            </td>
+        </tr>
+        <tr>
+            <td>II</td>
+            <td>Batanes</td>
+            <td>Sabtang</td>
+            <td>12</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 10%;"></div>
+                </div>
+            </td>
+            <td>
+                <button class="open-modal-btn view-btn" id="btn1">View</button>
+                <button class="open-modal-btn edit-btn">Edit</button>
+                <button class="open-modal-btn alert-btn">Alert</button>
+            </td>
+        </tr>
+        <tr>
+            <td>III</td>
+            <td>Cagayan</td>
+            <td>Calayan</td>
+            <td>12</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 65%;"></div>
+                </div>
+            </td>
+            <td>
+                <button class="open-modal-btn view-btn" id="btn1">View</button>
+                <button class="open-modal-btn edit-btn">Edit</button>
+                <button class="open-modal-btn alert-btn">Alert</button>
+            </td>
+        </tr>
+        <tr>
+            <td>III</td>
+            <td>Cagayan</td>
+            <td>Rizal</td>
+            <td>23</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 50%;"></div>
+                </div>
+            </td>
+            <td>
+                <button class="open-modal-btn view-btn" id="btn1">View</button>
+                <button class="open-modal-btn edit-btn">Edit</button>
+                <button class="open-modal-btn alert-btn">Alert</button>
+            </td>
+        </tr>
+        <tr>
+            <td>IV</td>
+            <td>Isabela</td>
+            <td>Benito Soliven</td>
+            <td>24</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                </div>
+            </td>
+            <td>
+                <button class="open-modal-btn view-btn" id="btn1">View</button>
+                <button class="open-modal-btn edit-btn">Edit</button>
+                <button class="open-modal-btn alert-btn">Alert</button>
+            </td>
+        </tr>
+        <tr>
+            <td>IV</td>
+            <td>Isabela</td>
+            <td>Divilacan</td>
+            <td>20</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 20%;"></div>
+                </div>
+            </td>
+            <td>
+                <button class="open-modal-btn view-btn" id="btn1">View</button>
+                <button class="open-modal-btn edit-btn">Edit</button>
+                <button class="open-modal-btn alert-btn">Alert</button>
+            </td>
+        </tr>
+    </table>
+
+  
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <div class="left-panel">
+                <div class="collapsible-container">
+                    <div class="collapsible-item">
+                        <button class="collapsible-btn" data-target="municipal-orientation">Start-Up Activities</button>
+                        <div class="collapsible-content">
+                            <ul>
+                                <li><p>Hiring and Deployment</p><button class="open-2ndmodal-btn" id="openSecondModal">Click here</button></li>
+                                <li><p>LGU Engagement</p><button class="open-2ndmodal-btn" id="openSecondModal">Click here</button></li>
+                                <li><p>Capability building for Technical Staff and partners</p><button>Action</button></li>
+                                <li><p>Setting-up of A/MCTs</p><button>Action</button></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="collapsible-item">
+                        <button class="collapsible-btn" data-target="social-investigation">Social Preparation</button>
+                        <div class="collapsible-content">
+                            <ul>
+                                <li><p>Municipal Orientation</p><button>Action</button></li>
+                                <li><p>Community Assembly</p><button>Action</button></li>
+                                <li><p>Community-Based Data Collection</p><button>Action</button></li>
+                                <li><p>Review and enhancement of LCCAP</p><button>Action</button></li>
+                                <li><p>Identification of PPAs</p><button>Action</button></li>
+                                <li><p>Selection of SP preparation Team</p><button>Action</button></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="collapsible-item">
+                        <button class="collapsible-btn" data-target="municipal-activities">Project Planning and Development</button>
+                        <div class="collapsible-content">
+                            <ul>
+                                <li><p>Validation and approval of priority needs and interventions</p><button>Action</button></li>
+                                <li><p>Development of Proposals (Including Environmental and Social Safeguards Requirements and Sustainability)</p><button>Action</button></li>
+                                <li><p>Community Assembly for approval and endorsement of proposals</p><button>Action</button></li>
+                                <li><p>LCC Core Group Technical Review</p><button>Action</button></li>
+                                <li><p>Criteria Setting Workshop</p><button>Action</button></li>
+                                <li><p>Municipal Inter-Barangay Forum on Participatory Resource Allocation</p><button>Action</button></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="collapsible-item">
+                        <button class="collapsible-btn" data-target="mdrrmc-meeting">Community Project Management</button>
+                        <div class="collapsible-content">
+                            <ul>
+                                <li><p>Basic training/workshop for community</p><button>Action</button></li>
+                                <li><p>Community Procurement</p><button>Action</button></li>
+                                <li><p>SP Implementation</p><button>Action</button></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="collapsible-item">
+                        <button class="collapsible-btn" data-target="social-Activities">Community Monitoring and Sustainability</button>
+                        <div class="collapsible-content">
+                            <ul>
+                                <li><p>Functionality Audit</p><button>Action</button></li>
+                                <li><p>Accountability Reporting</p><button>Action</button></li>
+                                <li><p>Sustainability Planning Workshop</p><button>Action</button></li>
+                                <li><p>Closing activities (ICR, SPCR, Booking of Assets)</p><button>Action</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="rightPanel" class="right-panel">
+                <div id="municipal-orientation" class="section">
+                    <h3>Municipal Orientation</h3>
+                    <!-- Form fields for Municipal Orientation -->
+                    <div class="form-group">
+                        <label for="moa">Signed MOA:</label>
+                        <input type="file" id="moa" class="input-file">
+                    </div>
+                    <div class="form-group">
+                        <label for="eo-mct">EO for MCT:</label>
+                        <input type="file" id="eo-mct" class="input-file">
+                    </div>
+                    <div class="form-group">
+                        <label for="activity-minutes">Activity Minutes:</label>
+                        <input type="file" id="activity-minutes" class="input-file">
+                    </div>
+                    <div class="form-group">
+                        <label for="attendance">Attendance:</label>
+                        <input type="file" id="attendance" class="input-file">
+                    </div>
+                    <div class="form-group">
+                        <label for="resolution">Resolution:</label>
+                        <input type="file" id="resolution" class="input-file">
+                    </div>
+                    <div class="form-group">
+                        <label for="other-docs">Other Documents:</label>
+                        <input type="file" id="other-docs" class="input-file">
+                    </div>
+                    <div class="form-group">
+                        <label for="mo-record">MO Record:</label>
+                        <input type="file" id="mo-record" class="input-file">
+                    </div>
+                </div>
+
+                <div id="social-investigation" class="section">
+                    <h3>Social Investigation</h3>
+                    <!-- Table for Barangay Information -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Barangay</th>
+                                <th>PIMS Link</th>
+                                <th>Attachment</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dynamic rows for Barangay information -->
+                            <tr>
+                                <td>Barangay 1</td>
+                                <td><a href="#">Link</a></td>
+                                <td><input type="file"></td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="mdrrmc-meeting" class="section">
+                    <h3>MDRRMC Meeting</h3>
+                    <!-- Form fields for MDRRMC Meeting -->
+                    <div class="form-group">
+                        <label for="meeting-minutes">Activity Minutes:</label>
+                        <input type="file" id="meeting-minutes" class="input-file">
+                    </div>
+                    <div class="form-group">
+                        <label for="accountability-report">Accountability Report:</label>
+                        <input type="file" id="accountability-report" class="input-file">
+                    </div>
+                    <div class="form-group">
+                        <label for="sustainability-plan">Sustainability Plan:</label>
+                        <input type="file" id="sustainability-plan" class="input-file">
+                    </div>
+                    <div class="form-group">
+                        <label for="closing-activities">Closing Activities:</label>
+                        <input type="file" id="closing-activities" class="input-file">
+                    </div>
+                </div>
+
+                <div id="municipal-activities" class="section">
+                    <h3>Municipal Orientation</h3>
+                    <!-- Form fields for Municipal Orientation -->
+                    <div class="form-group">
+                        <label for="moa">Signed MOA:</label>
+                        <input type="file" id="moa" class="input-file">
+                    </div>
+                    <div class="form-group">
+                        <label for="eo-mct">EO for MCT:</label>
+                        <input type="file" id="eo-mct" class="input-file">
+                    </div>
+                    <div class="form-group">
+                        <label for="activity-minutes">Activity Minutes:</label>
+                        <input type="file" id="activity-minutes" class="input-file">
+                    </div>
+                    <div class="form-group">
+                        <label for="attendance">Attendance:</label>
+                        <input type="file" id="attendance" class="input-file">
+                    </div>
+                    <div class="form-group">
+                        <label for="resolution">Resolution:</label>
+                        <input type="file" id="resolution" class="input-file">
+                    </div>
+                    <div class="form-group">
+                        <label for="other-docs">Other Documents:</label>
+                        <input type="file" id="other-docs" class="input-file">
+                    </div>
+                    <div class="form-group">
+                        <label for="mo-record">MO Record:</label>
+                        <input type="file" id="mo-record" class="input-file">
+                    </div>
+                </div>
+
+                <div id="social-Activities" class="section">
+                    <h3>Social Investigation</h3>
+                    <!-- Table for Barangay Information -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Barangay</th>
+                                <th>PIMS Link</th>
+                                <th>Attachment</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dynamic rows for Barangay information -->
+                            <tr>
+                                <td>Barangay 1</td>
+                                <td><a href="#">Link</a></td>
+                                <td><input type="file"></td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Modal -->
+    <div id="secondModal" class="modal">
+        <div class="second-modal-content">
+            <span class="close" id="closeSecondModal">&times;</span>
+            <h2>Second Modal</h2>
+            <p>This is the content of the second modal.</p>
+        </div>
+    </div>
+
+    <script>
+        // Get modal and open button elements
+        var modal = document.getElementById("myModal");
+        var openModalBtn = document.getElementById("openModalBtn");
+        var closeModal = document.getElementsByClassName("close")[0];
+        var secondModal = document.getElementById("secondModal");
+      
+        // Get right panel sections
+        var sections = document.querySelectorAll(".right-panel .section");
+
+        // Get all buttons that open the modal
+        var openModalBtns = document.querySelectorAll(".open-modal-btn");
+        var openSecondModalBtn = document.getElementById("openSecondModal");
+
+        // Get the <span> elements that close the modals
+        var closeSecondModal = document.getElementById("closeSecondModal");
+
+        // When any button is clicked, open the modal
+        openModalBtns.forEach(function(btn1) {
+            btn1.onclick = function() {
+                modal.style.display = "block";
+            };
+        });
+
+        
+
+        // When the close button is clicked, close the modal
+        closeModal.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks the button, open the second modal 
+        openSecondModalBtn.onclick = function() {
+            secondModal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the second modal
+        closeSecondModal.onclick = function() {
+            secondModal.style.display = "none";
+            Modal.style.display = "block";
+        }
+
+        // When the user clicks anywhere outside the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            if (event.target == secondModal) {
+                secondModal.style.display = "none";
+            }
+        }
+
+        // Add event listeners to collapsible buttons
+        var collapsibleBtns = document.querySelectorAll(".collapsible-btn");
+        collapsibleBtns.forEach(function(btn1) {
+            btn1.addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+
+                // Toggle the show class to expand or collapse content
+                if (content.classList.contains("show")) {
+                    content.classList.remove("show");
+                } else {
+                    // Hide all other collapsible content
+                    document.querySelectorAll(".collapsible-content").forEach(function(item) {
+                        item.classList.remove("show");
+                    });
+                    
+                    content.classList.add("show");
+                }
+
+                // Hide all right panel sections
+                sections.forEach(function(section) {
+                    section.style.display = "none";
+                });
+
+                // Show the corresponding section on the right panel
+                var target = this.getAttribute("data-target");
+                document.getElementById(target).style.display = "block";
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,258 @@
+/* Modal Styles */
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0.4); 
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto; /* Adjust this margin to control vertical spacing */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 100%; /* Increase the width to make it larger */
+            height: 100%; /* Increase the height to make it larger */
+            max-width: 1000px; /* Optional: limit the maximum width */
+            max-height: 600px; /* Optional: limit the maximum height */
+            display: flex; 
+            flex-direction: row; /* Adjust flex direction if needed */
+            overflow: hidden; /* Prevent scrollbars in modal-content */
+        }
+
+        .second-modal-content{
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Left Panel Styles */
+        .left-panel {
+            width: 50%;
+            padding: 10px;
+            border-right: 1px solid #ddd;
+            height: 100%; /* Make sure it takes full height of modal */
+            overflow: hidden; /* Prevent scrollbars */
+            box-sizing: border-box; /* Include padding in width and height */
+        }
+
+        .collapsible-container {
+            max-height: none; /* Remove max-height to prevent scrolling */
+        }
+
+        .collapsible-item {
+            margin-bottom: 10px;
+        }
+
+        .collapsible-btn {
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            color: white; /* Text color */
+            border-radius: 4px; /* Rounded corners */
+            font-size: 16px; /* Font size */
+        }
+
+        .open-2ndmodal-btn {
+            margin: 5px;
+            padding: 5px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Specific styles for each collapsible button */
+        .collapsible-btn[data-target="municipal-orientation"] {
+            background-color: #ffcc22; /* Green */
+        }
+
+        .collapsible-btn[data-target="social-investigation"] {
+            background-color: #f321d7; /* Blue */
+        }
+
+        .collapsible-btn[data-target="municipal-activities"] {
+            background-color: #4bf321; /* Blue */
+        }
+
+        .collapsible-btn[data-target="mdrrmc-meeting"] {
+            background-color: #224aff; /* Orange */
+        }
+
+        .collapsible-btn[data-target="social-Activities"] {
+            background-color: #f01414; /* Purple */
+        }
+
+        /* Hover effect for all buttons */
+        .collapsible-btn:hover {
+            opacity: 0.8;
+        }
+
+        /* Collapsible Content Styles */
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        /* Expanded state */
+        .collapsible-content.show {
+            max-height: 500px; /* Adjust the max-height based on your content */
+        }
+
+        /* Right Panel Styles */
+        .right-panel {
+            width: 50%;
+            padding: 10px;
+            overflow-y: auto;
+            max-height: 100%;
+            position: relative;
+        }
+
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-file {
+            width: 100%;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #f2f2f2;
+        }
+
+        /* Submit Button Styles */
+        .submit-btn {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        .view-btn {
+            background-color: #4bf321;
+        }
+
+        .edit-btn {
+            background-color: #FFA500;
+        }
+
+        .alert-btn {
+            background-color: #f01414;
+        }
+
+        .open-modal-btn {
+            margin: 2px;
+            padding: 5px 10px;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .progress-container {
+            width:  100%;
+            background-color: #f3f3f3;
+            border-radius: 5px;
+            overflow: hidden;
+            height: 20px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 20px;
+            color: white;
+            border-radius: 5px 0 0 5px;
+
+        }
+
+        .collapsible-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .collapsible-content li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .collapsible-content p {
+            margin-right: 10px;
+        }
+        
